@@ -7,8 +7,8 @@ $dayAddNow = 0;
 for ($i = 0; $i <= $dayPost; $i++) { 
     $date = date("d.m.Y", time() + 60*60*24*$dayAddNow);
     $dayAddNow++;
-    
-    if(date('w', strtotime($date)) == 0 || date('w', strtotime($date)) == 5) {
+
+    if(date('w', strtotime($date)) == 0 || date('w', strtotime($date)) == 6) {
         $i--;
     }
     else {
