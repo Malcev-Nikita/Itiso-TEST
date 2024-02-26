@@ -3,8 +3,7 @@
 <? $APPLICATION->IncludeComponent(
 	"itiso:test",
 	".default",
-	Array(
-	),
+	Array(),
 	false
 );?>
 
