@@ -15,7 +15,7 @@ for ($i = 0; $i <= $dayPost; $i++) {
         foreach ($arResult as $arItem) {
             $dayDB = date("d.m.Y", strtotime($arItem['DATE_HOLIDAY']['VALUE']));
     
-            if($dayDB == $date) {
+            if($dayDB == $date && $date != date("d.m.Y")) {
                 $i--;
             }
         }
